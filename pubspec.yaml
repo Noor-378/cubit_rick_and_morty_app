@@ -1,6 +1,6 @@
 name: cubit_rick_and_morty_app
 description: "A new Flutter project."
-publish_to: 'none' 
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -17,6 +17,10 @@ dependencies:
   flutter_offline: ^6.0.0
   meta: ^1.16.0
 
+dependency_overrides:
+  network_info_plus: ^6.1.4
+  connectivity_plus: ^5.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -24,6 +28,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-
   uses-material-design: true
-  
+
+  assets:
+    - assets/images/
