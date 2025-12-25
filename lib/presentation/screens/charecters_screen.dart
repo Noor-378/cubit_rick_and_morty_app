@@ -21,8 +21,7 @@ class _CharectersScreenState extends State<CharectersScreen> {
   void initState() {
     super.initState();
     // Get.find
-    allCharacters =
-        BlocProvider.of<CharectersCubit>(context).getAllCharacters();
+    BlocProvider.of<CharectersCubit>(context).getAllCharacters();
   }
 
   @override
