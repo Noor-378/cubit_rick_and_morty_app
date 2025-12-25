@@ -13,9 +13,10 @@ class CharectersWebServices {
     );
     dio = Dio(options);
   }
-  Future<Map<String, dynamic>> getAllCharecters() async {
+  Future<Map<String, dynamic>> getAllCharecters(int page) async {
     try {
-      Response? response = await dio?.get("character");
+      Response? response = await dio?.get("character",      queryParameters: {'page': page},);
+      
       log(
         "character statusCode:${response?.statusCode} response: ${response?.data}",
       );

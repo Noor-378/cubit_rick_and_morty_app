@@ -4,9 +4,28 @@ part of 'charecters_cubit.dart';
 sealed class CharectersState {}
 
 final class CharectersInitial extends CharectersState {}
-// final class CharectersErrorCase extends CharectersState {}
+
+final class CharectersLoading extends CharectersState {
+  final List<Character> oldCharacters;
+  final bool isFirstFetch;
+
+  CharectersLoading({
+    required this.oldCharacters,
+    required this.isFirstFetch,
+  });
+}
 
 final class CharectersLoaded extends CharectersState {
   final List<Character> characters;
-  CharectersLoaded(this.characters);
+  final bool hasNextPage;
+
+  CharectersLoaded({
+    required this.characters,
+    required this.hasNextPage,
+  });
+}
+
+final class CharectersError extends CharectersState {
+  final String message;
+  CharectersError(this.message);
 }

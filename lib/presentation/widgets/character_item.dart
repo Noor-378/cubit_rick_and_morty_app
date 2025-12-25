@@ -14,7 +14,7 @@ class CharacterItem extends StatelessWidget {
       margin: const EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
       padding: const EdgeInsetsDirectional.all(4),
       decoration: BoxDecoration(
-        color: MyColors.myWhite,
+        color: MyColors.myYellow.withValues(alpha: .65),
         borderRadius: BorderRadius.circular(8),
       ),
       child: GridTile(
