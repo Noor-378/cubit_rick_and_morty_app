@@ -1,4 +1,4 @@
-import 'package:cubit_rick_and_morty_app/data/models/charecters.dart';
+import 'charecters.dart';
 
 class CharactersPageResult {
   final List<Character> characters;

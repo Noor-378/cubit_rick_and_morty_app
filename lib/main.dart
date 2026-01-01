@@ -1,5 +1,5 @@
-import 'package:cubit_rick_and_morty_app/app_router.dart';
-import 'package:cubit_rick_and_morty_app/constants/my_colors.dart';
+import 'app_router.dart';
+import 'constants/my_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -1,6 +1,6 @@
-import 'package:cubit_rick_and_morty_app/data/models/charecters.dart';
-import 'package:cubit_rick_and_morty_app/data/models/result.dart';
-import 'package:cubit_rick_and_morty_app/data/web_services/charecters_web_services.dart';
+import '../models/charecters.dart';
+import '../models/result.dart';
+import '../web_services/charecters_web_services.dart';
 
 class CharectersRepository {
   final CharectersWebServices charectersWebServices;

@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:cubit_rick_and_morty_app/business_logic/cubit/charecters_cubit.dart';
-import 'package:cubit_rick_and_morty_app/constants/my_colors.dart';
-import 'package:cubit_rick_and_morty_app/data/models/charecters.dart';
-import 'package:cubit_rick_and_morty_app/presentation/widgets/character_item.dart';
+import '../../business_logic/cubit/charecters_cubit.dart';
+import '../../constants/my_colors.dart';
+import '../../data/models/charecters.dart';
+import '../widgets/character_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_offline/flutter_offline.dart';

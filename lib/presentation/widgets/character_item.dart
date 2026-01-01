@@ -1,7 +1,7 @@
-import 'package:cubit_rick_and_morty_app/constants/my_colors.dart';
-import 'package:cubit_rick_and_morty_app/constants/strings.dart';
-import 'package:cubit_rick_and_morty_app/data/models/charecters.dart';
-import 'package:cubit_rick_and_morty_app/presentation/widgets/custom_image.dart';
+import '../../constants/my_colors.dart';
+import '../../constants/strings.dart';
+import '../../data/models/charecters.dart';
+import 'custom_image.dart';
 import 'package:flutter/material.dart';
 
 class CharacterItem extends StatelessWidget {

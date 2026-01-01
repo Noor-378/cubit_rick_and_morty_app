@@ -1,5 +1,5 @@
 import 'dart:developer';
-import 'package:cubit_rick_and_morty_app/constants/strings.dart';
+import '../../constants/strings.dart';
 import 'package:dio/dio.dart';
 
 class CharectersWebServices {

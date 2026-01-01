@@ -1,7 +1,8 @@
-import 'package:cubit_rick_and_morty_app/data/models/charecters.dart';
-import 'package:cubit_rick_and_morty_app/data/repository/charecters_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
+
+import '../../data/models/charecters.dart';
+import '../../data/repository/charecters_repository.dart';
 
 part 'charecters_state.dart';
 
