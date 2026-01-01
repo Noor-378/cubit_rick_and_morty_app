@@ -108,7 +108,7 @@ class _CharectersScreenState extends State<CharectersScreen> {
 
               const SizedBox(height: 24),
 
-              Text(
+              const Text(
                 'No Internet Connection',
                 textAlign: TextAlign.center,
                 style: TextStyle(
