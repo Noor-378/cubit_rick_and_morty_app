@@ -1,5 +1,6 @@
 import 'package:cubit_rick_and_morty_app/business_logic/cubit/charecters_cubit.dart';
 import 'package:cubit_rick_and_morty_app/constants/strings.dart';
+import 'package:cubit_rick_and_morty_app/data/models/charecters.dart';
 import 'package:cubit_rick_and_morty_app/data/repository/charecters_repository.dart';
 import 'package:cubit_rick_and_morty_app/data/web_services/charecters_web_services.dart';
 import 'package:cubit_rick_and_morty_app/presentation/screens/charecter_details_screen.dart';
@@ -28,9 +29,10 @@ class AppRouter {
                 child: const CharectersScreen(),
               ),
         );
-      case charecterDetailsScreen:
+      case characterDetailsScreen:
+        final character = settings.arguments as Character;
         return MaterialPageRoute(
-          builder: (BuildContext context) => const CharecterDetailsScreen(),
+          builder: (BuildContext context) =>  CharecterDetailsScreen(character: character),
         );
     }
   }

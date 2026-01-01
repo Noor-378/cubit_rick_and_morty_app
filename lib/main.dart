@@ -1,4 +1,5 @@
 import 'package:cubit_rick_and_morty_app/app_router.dart';
+import 'package:cubit_rick_and_morty_app/constants/my_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(onGenerateRoute: appRouter.generateRoute);
+    return MaterialApp(
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          iconTheme: IconThemeData(color: MyColors.myYellow),
+        ),
+      ),
+
+      onGenerateRoute: appRouter.generateRoute,
+    );
   }
 }
 
